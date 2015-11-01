@@ -6,7 +6,7 @@ class NotesController < ApplicationController
 	end
 
 	def new
-		@note = Note.new
+		@note = current_user.notes.build
 	end
 
 	def show
@@ -14,18 +14,25 @@ class NotesController < ApplicationController
 
 
 	def create
-		@note = Note.new(note_params)
+		@note = current_user.notes.build(note_params)
 		if @note.save
 			redirect_to @note
 		else
 			render 'new'
+		end
 	end
-end
 
 	def update
+		if @note.update(note_params)
+			redirect_to @note
+		else
+			render 'new'
+		end
 	end
 
 	def destroy
+		@note.destroy
+		redirect_to notes_path
 	end
 
 	private
