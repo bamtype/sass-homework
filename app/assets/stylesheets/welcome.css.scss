@@ -1,5 +1,5 @@
 #banner {
-	background-image: url(image_path("welcome_banner_image.jpg"));
+	background-image: url(image_path("snow.jpg"));
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -12,7 +12,7 @@
 		text-align: center;
 		h1 {
 			@include bold_font;
-			color: white;
+			color: black;
 			font-size: 3.5rem;
 			margin: 0;
 		}
@@ -41,12 +41,12 @@
 }
 
 #callouts {
-	background-image: url(image_path("callout_background.jpg"));
+	background-image: url(image_path("road.jpg"));
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
 	width: 100%;
-	min-height: 400px;
+	min-height: 600px;
 	display: table;
 	.callout_inner {
 		display: table-cell;
@@ -59,7 +59,8 @@
 		float: left;
 		h2 {
 			@include bold_font;
-			color: white;
+			color: black;
+			font-style: times;
 			margin-bottom: 0;
 		}
 		p {

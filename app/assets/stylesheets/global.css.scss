@@ -41,35 +41,34 @@ body {
 button, .button {
 	border: none;
 	outline: none;
-	background: $green;
+	background: white;
 	padding: 1rem 3.5rem;
 	border-radius: 2rem;
 	a {
-		color: white;
+		color: black;
 		text-decoration: none;
 	}
 }
 
 .button {
-	color: white;
+	color: black;
 	margin: 2rem 0;
 }
 
 a {
-	color: $green;
+	color: black;
 	text-decoration: none;
-	&:hover {
-		color: $dark_gray;
-	}
+	
 }
 
 header {
-	background: $dark_gray;
+	background: white;
 	position: fixed;
+	height:131px;
 	top: 0;
 	width: 100%;
 	padding: 1.75rem 0;
-	border-bottom: 7px solid $green;
+	border-bottom: 7px solid black;
 	.header_inner {
 		width: 90%;
 		margin: 0 auto;
@@ -82,9 +81,9 @@ header {
 			float: right;
 			a {
 				text-decoration: none;
-				color: white;
+				color: black;
 				font-size: 1.1rem;
-				line-height: 1.5;
+				line-height: 2.5;
 				margin-left: 1rem;
 				&:hover {
 					color: $green;
@@ -95,11 +94,12 @@ header {
 }
 
 footer {
-	background: $dark_gray;
+	background: white;
 	width: 100%;
 	padding: 2rem 0;
-	color: white;
+	color: black;
 	text-align: center;
+	border-top: 7px solid black;
 	@include bold_font;
 	p {
 		margin: 0;

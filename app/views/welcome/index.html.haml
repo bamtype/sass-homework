@@ -1,20 +1,32 @@
 #banner
   .banner_content
-    %h1 Notebook
-    %p Relax and Take Note
-    %button= link_to "Sign Up", new_user_registration_path
+    = link_to image_tag(image_path("snow.jpg")), new_user_session_path;
+    %h1 Bam//book
+    %h2 Relax and Take Note
+    / %button= link_to "Sign Up", new_user_registration_path
 
 #testimonial
   .wrapper
-    %p.quote "The greatest ever"
-    %p.name - Demond Simmons
+    %p.quote "The greatest Bam//Book to date"
+    %p.name - No One Ever
 
 #callouts
   .callout_inner
     .wrapper
-
-  
-		
+      #callouts
+        .callout
+          %i.fa.fa-odnoklassniki
+          %h2 Putain
+          %p Look deep inside yourself, write a fucking Note!
+        .callout
+          %i.fa.fa-cloud
+          %h2 Merde
+          %p Examine how fucked up you are, write a fucking Note!
+        .callout
+          %i.fa.fa-female
+          %h2 Salope
+          %p Do you have clean underwear, write a fucking Note!   
+  		 
 
 #bottom_cta
   .wrapper
@@ -22,8 +34,7 @@
     %p Cluminatiiiiiiiiiii
     %button= link_to "I Dare You", new_user_registration_path
 
-%footer
-  %p &copy;  AmsterBam
+
 
 
 

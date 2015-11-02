@@ -1,6 +1,6 @@
 #notes {
 	.note {
-		background: $dark_gray;
+		background: #04B4AE;
 		width: 30%;
 		min-height: 150px;
 		margin: 1rem 1%;
@@ -10,7 +10,7 @@
 		position: relative;
 		.title {
 			@include bold_font;
-			color: white;
+			color: black;
 			margin: 0;
 			letter-spacing: 1px;
 		}
@@ -18,7 +18,7 @@
 			position: absolute;
 			bottom: .25rem;
 			left: 8.5%;
-			color: $green;
+			color: black;
 			font-size: .85rem;
 		}
 	}
@@ -35,14 +35,16 @@
 	p {
 		font-size: 1.375rem;
 		line-height: 1.75;
+		background-color: #04B4AE;
 	}
+
 	.buttons {
 		margin-top: 3rem;
 		a.button {
 			padding: .5rem 2rem;
 			border-radius: 2rem;
 			text-decoration: none;
-			color: $green;
+			color: black;
 			border: 5px solid #E9E9E9;
 			@include bold_font;
 			background: transparent;
